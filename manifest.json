@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "name": "Linkedin Profile Extractor",
+    "version": "1.0",
+    "description": "Linkedin Profile Extractor is the extraction tool for linkedin to extract the data from the page",
+    "author": "Sekh Soaib Haque",
+    "content_scripts": [{
+        "matches": ["*://*.linkedin.com/*"],
+        "js": ["content.js"]
+    }],
+    "icons": {
+        "16": "logo.png",
+        "32": "logo.png",
+        "48": "logo.png",
+        "128": "logo.png"
+    },
+    "browser_action": {
+        "default_icon": "logo.png",
+        "default_popup": "popup.html",
+        "default_title": "Linkedin Profile Extractor"
+    },
+    "permissions": ["storage"]
+}
